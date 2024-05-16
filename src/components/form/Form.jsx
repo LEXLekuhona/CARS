@@ -11,30 +11,22 @@ const Form = () => {
 
 	return (
 		<div
-			className='d-flex align-items-center flex-column justify-content-center'
-			style={{ backgroundColor: '#e9ecef', height: '100vh' }}
+			className='login-page d-flex align-items-center flex-column justify-content-center'
 		>
-			<div style={{ width: '360px' }}>
+			<div className='login-box'>
 				<div
-					className='fw-light mb-3 text-center'
-					style={{ fontSize: '2.1rem' }}
+					className='fw-light mb-3 text-center login-logo'
 				>
 					<b>Cars</b>DB
 				</div>
 
 				<div
-					className='position-relative d-flex flex-column bg-white text-break mb-0 '
-					style={{
-						border: '0 solid rgba(0, 0, 0, 0.125)',
-						borderRadius: '0.25rem',
-						boxShadow:
-							'0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2)',
-					}}
+					className='card position-relative d-flex flex-column bg-white text-break mb-0 '
 				>
-					<div style={{ flex: '1 1 auto', padding: '20px' }}>
+					<div className='card-body'>
 						<p
-							className='m-0 text-center'
-							style={{ padding: '0 20px 20px', color: '#666' }}
+							className='login-box-msg m-0 text-center'
+							
 						>
 							Авторизуйтесь для доступа к БД
 						</p>
@@ -45,8 +37,7 @@ const Form = () => {
 								<input
 									name='username'
 									type='text'
-									className='form-control m-0'
-									style={{ fontFamily: 'inherit' }}
+									className='input-login form-control m-0'
 									placeholder='Логин'
 									required
 									value={login}
@@ -60,8 +51,7 @@ const Form = () => {
 								<input
 									name='password'
 									type='password'
-									className='form-control m-0'
-									style={{ fontFamily: 'inherit' }}
+									className='input-login form-control m-0'
 									placeholder='Пароль'
 									required
 									value={password}
@@ -70,12 +60,11 @@ const Form = () => {
 
 								<FaLock className='icon' />
 							</div>
-							<div className='row' style={{ margin: '0 -7.5px  0  -7.5px' }}>
-								<div className='col-4' style={{ padding: '0 7.5px 0 7.5px' }}>
+							<div className='row row-footer' >
+								<div className='col-4 col-footer'>
 									<button
 										type='submit'
-										className='btn btn-primary d-block'
-										style={{ width: '100%' }}
+										className='btn button btn-primary d-block'
 									>
 										Войти
 									</button>

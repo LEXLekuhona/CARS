@@ -1,12 +1,12 @@
-
+import Form from './components/form/Form'
 import Home from './components/home/Home'
 
 const App = () => {
 	return (
 		<>
-			{/* {<Form />}	 */}
+			<Form />
 			{/* <Header /> */}
-			<Home />
+			{/* <Home /> */}
 			{/* <Footer /> */}
 		</>
 	)
