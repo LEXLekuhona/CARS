@@ -1,3 +1,3 @@
 #Install
-##yarn install
+##yarn Install
 ##yarn run dev
